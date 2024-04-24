@@ -64,7 +64,7 @@ with st.container():
     # st.write('이미지를 업로드하면, 가로 최대 설정한 장수까지 배열하여 삽입합니다.')
     st.write('**이미지 크기와 간격을 조절하여 적절하게 사용하세요!** (모두 픽셀 단위)')
     max_images_per_row = st.number_input('가로에 배치할 이미지 수', min_value=1, value=6)
-    start_cell = st.text_input('이미지 시작 셀 주소 (예: A2)', value='A2')
+    start_cell = st.text_input('이미지 시작 셀 주소', value='A2')
     image_width = st.number_input('이미지 가로 크기', min_value=100, value=250)
     image_height = st.number_input('이미지 세로 크기', min_value=100, value=500)
     cell_width = st.number_input('이미지 너비 간격: 너비를 크게 잡을수록 이미지 간 가로 간격이 좁아져요', value=100)
