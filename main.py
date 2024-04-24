@@ -65,7 +65,7 @@ with st.container():
     st.write('**이미지 크기와 간격을 조절하여 적절하게 사용하세요!**')
     max_images_per_row = st.number_input('한 행에 배치할 이미지 최대 수', min_value=1, value=6)
     cell_width = st.number_input('셀 너비 간격 설정(픽셀): 너비를 크게 잡을수록 이미지 가로 간격이 좁아져요', value=100)
-    cell_height = st.number_input('셀 높이 간격 설정(픽셀)': 높이를 크게 잡을수록 이미지 세로 간격이 좁아져요', value=20)
+    cell_height = st.number_input('셀 높이 간격 설정(픽셀): 높이를 크게 잡을수록 이미지 세로 간격이 좁아져요', value=20)
     start_cell = st.text_input('이미지를 시작할 셀 주소 (예: A2)', value='A2')
     image_width = st.number_input('이미지의 가로 크기 (픽셀)', min_value=100, value=250)
     image_height = st.number_input('이미지의 세로 크기 (픽셀)', min_value=100, value=500)
