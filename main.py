@@ -67,8 +67,8 @@ with st.container():
     start_cell = st.text_input('이미지 시작 셀 주소', value='A2')
     image_width = st.number_input('이미지 가로 크기', min_value=100, value=250)
     image_height = st.number_input('이미지 세로 크기', min_value=100, value=500)
-    cell_width = st.number_input('이미지 너비 간격: 너비를 크게 잡을수록 이미지 간 가로 간격이 좁아져요', value=100)
-    cell_height = st.number_input('이미지 높이 간격: 높이를 크게 잡을수록 이미지 간 세로 간격이 좁아져요', value=20)
+    cell_width = st.number_input('이미지 너비 간격 (너비를 크게 잡을수록 이미지 간 가로 간격이 좁아져요)', value=100)
+    cell_height = st.number_input('이미지 높이 간격 (높이를 크게 잡을수록 이미지 간 세로 간격이 좁아져요)', value=20)
 
 # 사용자가 업로드할 엑셀 파일
 uploaded_excel = st.file_uploader("테스트결과서 엑셀 파일을 업로드하세요", type=['xlsx'])
