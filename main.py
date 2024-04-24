@@ -61,7 +61,7 @@ st.title('테스트결과서 마지막 시트에 캡처 삽입하기')
 
 # 사용자 설정 입력
 with st.container():
-    st.write('이미지를 업로드하면, 가로 최대 설정한 장수까지 배열하여 삽입합니다.')
+    # st.write('이미지를 업로드하면, 가로 최대 설정한 장수까지 배열하여 삽입합니다.')
     st.write('**이미지 크기와 간격을 조절하여 적절하게 사용하세요!**')
     max_images_per_row = st.number_input('한 행에 배치할 이미지 최대 수', min_value=1, value=6)
     cell_width = st.number_input('셀 너비 간격 설정 (픽셀)', value=100)
