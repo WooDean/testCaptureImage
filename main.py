@@ -112,8 +112,8 @@ if uploaded_files and uploaded_excel:
         with open(tmp_excel.name, "rb") as f:
             st.download_button('수정된 엑셀 파일 다운로드', f, file_name=original_filename)
 
-else:
-    st.write('이미지 파일과 엑셀 파일을 업로드해주세요.')
+# else:
+#     st.write('이미지 파일과 엑셀 파일을 업로드해주세요.')
 
 
 
