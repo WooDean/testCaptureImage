@@ -57,7 +57,7 @@ unsafe_allow_html=True
 )
 
 # 스트림릿 앱 제목 설정
-st.title('테스트결과서 마지막 시트에 캡처 삽입하기')
+st.title('테스트결과서 마지막 시트에 캡처를 삽입하세요')
 
 # 사용자 설정 입력
 with st.container():
