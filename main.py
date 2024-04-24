@@ -62,16 +62,16 @@ st.title('테스트결과서 마지막 시트에 캡처 삽입하기')
 # 사용자 설정 입력
 with st.container():
     # st.write('이미지를 업로드하면, 가로 최대 설정한 장수까지 배열하여 삽입합니다.')
-    st.write('**이미지 크기와 간격을 조절하여 적절하게 사용하세요!**')
+    st.write('**이미지 크기와 간격을 조절하여 적절하게 사용하세요! (모두 픽셀 단위) **')
     max_images_per_row = st.number_input('한 행에 배치할 이미지 최대 수', min_value=1, value=6)
-    cell_width = st.number_input('셀 너비 간격 설정(픽셀): 너비를 크게 잡을수록 이미지 가로 간격이 좁아져요', value=100)
-    cell_height = st.number_input('셀 높이 간격 설정(픽셀): 높이를 크게 잡을수록 이미지 세로 간격이 좁아져요', value=20)
+    cell_width = st.number_input('셀 너비 간격 설정: 너비를 크게 잡을수록 이미지 가로 간격이 좁아져요', value=100)
+    cell_height = st.number_input('셀 높이 간격 설정: 높이를 크게 잡을수록 이미지 세로 간격이 좁아져요', value=20)
     start_cell = st.text_input('이미지를 시작할 셀 주소 (예: A2)', value='A2')
-    image_width = st.number_input('이미지의 가로 크기 (픽셀)', min_value=100, value=250)
-    image_height = st.number_input('이미지의 세로 크기 (픽셀)', min_value=100, value=500)
+    image_width = st.number_input('이미지의 가로 크기', min_value=100, value=250)
+    image_height = st.number_input('이미지의 세로 크기', min_value=100, value=500)
 
 # 사용자가 업로드할 엑셀 파일
-uploaded_excel = st.file_uploader("엑셀 파일을 업로드하세요", type=['xlsx'])
+uploaded_excel = st.file_uploader("테스트결과서 엑셀 파일을 업로드하세요", type=['xlsx'])
 
 # 이미지 업로드
 uploaded_files = st.file_uploader("이미지 파일을 선택하세요 (여러 개 선택 가능)", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
