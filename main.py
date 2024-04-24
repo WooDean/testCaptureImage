@@ -74,7 +74,7 @@ with st.container():
 uploaded_excel = st.file_uploader("테스트결과서 엑셀 파일을 업로드하세요", type=['xlsx'])
 
 # 이미지 업로드
-uploaded_files = st.file_uploader("이미지 파일을 선택하세요(여러 개 선택 가능)", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
+uploaded_files = st.file_uploader("이미지 파일을 업로드하세요", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
 
 if uploaded_files and uploaded_excel:
     original_filename = uploaded_excel.name  # 업로드한 파일의 원래 이름
