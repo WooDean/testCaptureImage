@@ -60,7 +60,7 @@ unsafe_allow_html=True
 st.title('테스트결과서 도우미')
 
 # 플랫폼 선택
-platforms = st.multiselect('플랫폼을 선택하세요 (복수 선택 가능)', ['iOS', 'AOS', 'HTS', 'MINTs', '기타'])
+platforms = st.multiselect('플랫폼을 선택하세요 (복수 선택 가능)', ['iOS', 'AOS', 'HTS', 'MINTs', '홈페이지', '기타'])
 
 # 업로드할 엑셀 파일
 uploaded_excel = st.file_uploader("테스트결과서 엑셀 파일을 업로드하세요", type=['xlsx'])
@@ -109,8 +109,6 @@ if uploaded_excel and platforms:
                 st.download_button('수정된 엑셀 파일 다운로드', f, file_name=original_filename)
 else:
     st.write('이미지 파일, 엑셀 파일 및 플랫폼을 선택해주세요.')
-
-
 
 
 
